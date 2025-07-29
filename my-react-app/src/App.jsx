@@ -14,4 +14,6 @@ function App() {
          <Footer />
       </>
    );
-t App
+}
+
+export default App

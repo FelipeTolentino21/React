@@ -1,0 +1,40 @@
+1. No final de um componente, ele deve ser exportado para que possa ser importado em outro lugar
+ex:
+export default Header
+
+2. As chaves (fragmentadas) são usadas para exportar apenas um componente, esse podendo conter outros dentro dele
+   pois só se pode exportar um componente. O componente pode também ter o fechamento implicito, ao invés do normal.
+ex:
+      <>
+         <Header />
+         <Food />
+         <Footer />
+      </>
+
+3. Foi demonstraco como se usa uma função e seu correspondente método em JS dentro de um componente com elementos HTML
+ex:
+      <footer>
+         <p>&copy; {new Date().getFullYear()} First react project</p>
+      </footer>
+
+4. Foi demonstrado que métodos ainda funcionam sobre as variáveis
+ex:
+<ul>
+         <li>Apple</li>
+         <li>{food1}</li>
+         <li>{food2.toUpperCase()}</li>
+      </ul>
+
+5. A ordem que os componentes são importados importa.
+ex:
+      <>
+         <Header />
+         <Footer />
+      </>
+
+      É DIFERENTE DE
+
+      <>
+         <Header />
+         <Footer />
+      </>
