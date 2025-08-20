@@ -17,9 +17,11 @@ ex:
          <p>&copy; {new Date().getFullYear()} First react project</p>
       </footer>
 
+* OBS: &copy é para colocar o símbolo de copyright
+
 4. Foi demonstrado que métodos ainda funcionam sobre as variáveis
 ex:
-<ul>
+      <ul>
          <li>Apple</li>
          <li>{food1}</li>
          <li>{food2.toUpperCase()}</li>
@@ -38,3 +40,11 @@ ex:
          <Header />
          <Footer />
       </>
+
+6. Para criar uma classe, não podemos usar "class" pois é uma palavra reservada em JSX, ao invés disso
+pode ser usado o "className"
+ex:
+      <div className="card">
+         -conteúdo-
+      </div>
+
